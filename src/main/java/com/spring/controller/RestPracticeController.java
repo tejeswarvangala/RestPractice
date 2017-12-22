@@ -28,6 +28,12 @@ public class RestPracticeController {
 	@Autowired
 	private CustomerDao customerDao;
 
+	@GetMapping("/health")
+	@ResponseStatus(HttpStatus.OK)
+	@ApiOperation(value = "Checks API health")
+	public String checkHealth() {
+		return "API Up and Running.";
+	}
 	@GetMapping("/")
 	@ResponseStatus(HttpStatus.OK)
 	@ApiOperation(value = "returns all customers", notes = "Return the firstName and lastname of the customers")
