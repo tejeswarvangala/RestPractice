@@ -1,6 +1,7 @@
 package com.spring.customer.model;
 
 public class Customer {
+	private String cid;
 	private String firstName;
 	private String lastName;
 	public Customer(String firstName, String lastName) {
@@ -23,6 +24,7 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
 	
 	
 
