@@ -34,6 +34,12 @@ public class RestPracticeController {
 	public String checkHealth() {
 		return "API Up and Running.";
 	}
+@GetMapping("/reviews")
+	@ResponseStatus(HttpStatus.OK)
+	@ApiOperation(value = "Checks API health")
+	public String checkHealthReview() {
+		return "API check has been sucess and Running.";
+	}
 	@GetMapping("/")
 	@ResponseStatus(HttpStatus.OK)
 	@ApiOperation(value = "returns all customers", notes = "Return the firstName and lastname of the customers")
